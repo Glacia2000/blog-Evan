@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Map CSS -->
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    <!-- Title -->
+    <title>pages d'Evan</title>
+  </head>
+  <body class="bg-light">
+    <!-- NAVBAR : BARRE DE NAVIGATION -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- Brand -->
+        <!-- ajoute un lien sur ton image ici <a href=""> -->
+        <a class="navbar-brand" href="index.html">
+          <div class="avatar avatar-xxl">
+            <!-- change ta photo ici  -->
+            <img
+              src="./assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+              alt="..."
+              class="avatar-img rounded-circle"
+            />
+          </div>
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse - permet de rendre le menu responsive -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <!-- copie colle ce bloc <li> si tu veux rajouter un lien dans ta navbar -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Blog </a>
+            </li>
+            <!-- jusque là </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"> A propos de moi </a>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <!-- mets un lien sur le bouton G404 ! -->
+          <a
+            class="navbar-btn btn btn-sm btn-primary lift ms-auto"
+            href="https://genshin.hoyoverse.com/pc-launcher/?utm_source=EU_google_FR_search_20220720&mhy_trace_channel=ga_channel&new=1&gclid=EAIaIQobChMIoKXJh5zA_AIVQ5BoCR1icwaeEAAYASAAEgKMe_D_BwE#/GI008"
+            target="_blank"
+          >
+            Genshin (c'est trop bien, jouez-y)
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION HEADER -->
+
+    <!-- ici tu peux changer l'image de fond de ta page dans style="background-image"-->
+    <section
+      data-jarallax
+      data-speed=".8"
+      class="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover jarallax"
+      style="background-image: url(assets/img/avatars/genshin-impact-xiao-trailer.jpg)"
+    >
+      <!-- Quelques explications des class ci-dessus : py-10 et py-md-10 gèrent le padding, overlay gère la surcouche (filtre noir non opaque) sur l'image et jarallax cre un parallax sur la section -->
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- justify-content-center indique que l'on est dans une flexbox -->
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+            <!-- Heading -->
+            <h1 class="display-2 fw-bold text-white">Blog d'Evan</h1>
+
+            <!-- Text -->
+            <p class="lead mb-0 text-white-75">
+              <!-- mb-0 signifie aucun margin-bottom -->
+              Bienvenue sur mon blog, découvrez mon univers et ce que je sais
+              faire !
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE : cette div utilise un svg pour créer la forme arrondie sur la section -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        <svg
+          viewBox="0 0 2880 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- ARTICLES -->
+    <section class="pt-7 pt-md-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- CARD BOOTSTRAP -->
+            <div class="card card-row shadow-light-lg mb-6 lift lift-lg">
+              <div class="row gx-0">
+                <div class="col-12"></div>
+                <a
+                  class="col-12 col-md-6 order-md-2 bg-cover card-img-end"
+                  style="background-image: url(assets/img/photos/UI_Gacha_AvatarImg_Cyno.png)"
+                  href="premier-article.html"
+                >
+                  <!-- Image (placeholder) -->
+                  <img
+                    src="assets/img/photos/hero-home.jpg"
+                    alt="..."
+                    class="img-fluid d-md-none invisible"
+                  />
+
+                  <!-- Shape (forme arrondie) -->
+                  <div
+                    class="shape shape-start shape-fluid-y text-white d-none d-md-block"
+                  >
+                    <svg
+                      viewBox="0 0 112 690"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <div class="col-12 col-md-6 order-md-1">
+                  <!-- Body de la card -->
+                  <a class="card-body" href="premier-article.html">
+                    <!-- Heading/Titre de la card -->
+                    <h3>Cyno</h3>
+
+                    <!-- Text de la card -->
+                    <p class="mb-0 text-muted">
+                    Toute les info que vous avez besoin sur lui
+                    </p>
+                  </a>
+
+                  <!-- Meta -->
+                  <a class="card-meta" href="#!">
+                    <!-- Divider -->
+                    <hr class="card-meta-divider" />
+
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm me-2">
+                      <img
+                        src="./assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+                        alt="..."
+                        class="avatar-img rounded-circle"
+                      />
+                    </div>
+
+                    <!-- Auteur -->
+                    <h6 class="text-uppercase text-muted me-2 mb-0">Evan</h6>
+
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                      <time datetime="2019-05-02">18 janvier 2023</time>
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+
+
+    <!-- ARTICLES -->
+    <section class="pt-7 pt-md-10">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+            <!-- Heading -->
+            <h3 class="mb-0">Derniers articles</h3>
+
+            <!-- Text -->
+            <p class="mb-0 text-muted">Voici ce que j'ai fais récemment.</p>
+          </div>
+          <div class="col-12 col-md-auto"></div>
+        </div>
+        <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <!-- ici je met le lien vers l'article au clic sur la photo -->
+              <a class="card-img-top" href="deuxième-article.html">
+                <!-- Image -->
+                <!-- ici tu peux mettre l'image de ton article dans src="" -->
+                <img
+                  src="assets/img/avatars/header_image.webp"
+                  alt="..."
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg
+                      viewBox="0 0 2880 480"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <!-- ICI MET LE LIEN href VERS TON ARTICLE AU CLIC SUR LA CARD  -->
+              <a class="card-body" href="deuxième-article.html">
+                <!-- Heading -->
+                <!-- ICI TU PEUX METTRE LE TITRE DE TON ARTICLE DANS LE H3 -->
+                <h3>Xiao</h3>
+
+                <!-- Text -->
+                <!-- Un petit texte pour décrire ton article ?-->
+                <p class="mb-0 text-muted">
+                  guide
+                </p>
+              </a>
+
+              <!-- Meta -->
+              <!-- ICI MET LE LIEN href VERS TON ARTICLE AU CLIC SUR LA CARD  -->
+              <a class="card-meta mt-auto" href="deuxième-article.html">
+                <!-- Divider -->
+                <hr class="card-meta-divider" />
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <!-- change ta photo ici  -->
+                  <img
+                    src="./assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+                    alt="..."
+                    class="avatar-img rounded-circle"
+                  />
+                </div>
+
+                <!-- Auteur -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">Evan</h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">22/01/2023</time>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- A PARTIR D'ICI LE CODE DE LA LIGNE 126 A 194 SE REPETE, IL S'AGIT DES CARDS POUR LES ARTICLES
+          DONC LES CONSIGNES SONT LES MEMES -->
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <!-- ici je met le lien vers l'article au clic sur l'image -->
+              <a class="card-img-top" href="troisième-article.html">
+                <!-- Image -->
+                <!-- CHANGE L'IMAGE -->
+                <img
+                  src="assets/img/photos/header_image.webp"
+                  alt="..."
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg
+                      viewBox="0 0 2880 480"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <!-- ICI MET LE LIEN href VERS TON ARTICLE AU CLIC SUR LA CARD  -->
+              <a class="card-body" href="troisième-article.html">
+                <!-- Heading -->
+                <!-- CHANGE LE TITRE -->
+                <h3>Jean</h3>
+
+                <!-- Text -->
+                <!-- CHANGE LE TEXTE -->
+                <p class="mb-0 text-muted">
+                  très bon support anémo
+                </p>
+              </a>
+
+              <!-- Meta -->
+              <!-- ICI MET LE LIEN href VERS TON ARTICLE AU CLIC SUR LA CARD  -->
+              <a class="card-meta mt-auto" href="troisième-article.html">
+                <!-- Divider -->
+                <hr class="card-meta-divider" />
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <!-- METS TA PHOTO -->
+                  <img
+                    src="assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+                    alt="..."
+                    class="avatar-img rounded-circle"
+                  />
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">Evan</h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">24/01/2023</time>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- A PARTIR D'ICI LE CODE DE LA LIGNE 199 A 267 SE REPETE, IL S'AGIT DES CARDS POUR LES ARTICLES
+          DONC LES CONSIGNES SONT LES MEMES, CETTE FOIS PAS DE COMMENTAIRE POUR VOUS AIDER -->
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="quatrieme-article.html">
+                <!-- Image -->
+                <img
+                  src="assets/img/photos/header_image zhongli.webp"
+                  alt="..."
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg
+                      viewBox="0 0 2880 480"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="quatrieme-article.html">
+                <!-- Heading -->
+                <h3>Zhongli</h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                 meilleur shield
+                </p>
+              </a>
+
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="quatrieme-article.html">
+                <!-- Divider -->
+                <hr class="card-meta-divider" />
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <img
+                    src="assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+                    alt="..."
+                    class="avatar-img rounded-circle"
+                  />
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">Evan</h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">24/01/2023</time>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- ICI COMMENCE LA SECTION DES 2 GROS ARTICLES POPULAIRES, LA LOGIQUE EST LA MEME QU'AVANT
+    DES COMMENTAIRES POUR VOUS AIDER SONT PRESENTS DANS LE PREMIER -->
+
+    <!-- ARTICLES -->
+    <section class="pt-7 pt-md-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Heading -->
+            <h3 class="mb-0">Articles populaires</h3>
+
+            <!-- Text -->
+            <!-- PETIT TEXTE SUR CE QUE VOUS PREFEREZ -->
+            <p class="mb-5 text-muted">info globale sur genshin</p>
+          </div>
+        </div>
+        <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <!-- LE LIEN VERS L'ARTICLE ICI -->
+              <a class="card-img-top" href="gros-article-1.html">
+                <!-- Image -->
+                <!-- L'IMAGE DE L'ARTICLE ICI -->
+                <img
+                  src="assets/img/photos/056f9ab46e8c061059027fd1a9611608_1902049580560570743.jpg"
+                  alt="..."
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg
+                      viewBox="0 0 2880 480"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <!-- LIEN VERS L'ARTICLE ICI -->
+              <a class="card-body" href="gros-article-1.html">
+                <!-- Heading -->
+                <!-- ON CHANGE LE TITRE -->
+                <h3>Mondstadt</h3>
+
+                <!-- Text -->
+                <!-- PETIT TEXTE DE PRESENTATION DE L'ARTICLE -->
+                <p class="mb-0 text-muted">
+                  la carte de la map, les différente ressources
+                </p>
+              </a>
+
+              <!-- Meta -->
+              <!-- LIEN VERS L'ARTICLE ICI -->
+              <a class="card-meta mt-auto" href="gros-article-1.html">
+                <!-- Divider -->
+                <hr class="card-meta-divider" />
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <!-- ON MET SA PHOTO ICI -->
+                  <img
+                    src="assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+                    alt="..."
+                    class="avatar-img rounded-circle"
+                  />
+                </div>
+
+                <!-- Author -->
+                <!-- ON MET SON NOM PRENOM ICI -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">Evan</h6>
+
+                <!-- Date -->
+                <!-- LA DATE ICI -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">24/01/2023</time>
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- A PARTIR DE LA C'EST LA DEUXIEME CARD QUI COMMENCE, PAS DE COMMENTAIRE POUR AIDER -->
+
+          <div class="col-12 col-md-6 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a class="card-img-top" href="gros-article-2.html">
+                <!-- Image -->
+                <img
+                  src="assets/img/photos/e81365141a3d7a26f39c06e88c157568_2746953307610479493 weekly.png"
+                  alt="..."
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg
+                      viewBox="0 0 2880 480"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="gros-article-2.html">
+                <!-- Heading -->
+                <h3>les boss</h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                 les weeklys et les boss d'amélioration de perso
+                </p>
+              </a>
+
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="gros-article-2.html">
+                <!-- Divider -->
+                <hr class="card-meta-divider" />
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <img
+                    src="assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+                    alt="..."
+                    class="avatar-img rounded-circle"
+                  />
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">Evan</h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">24/01/2023</time>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-gray-200">
+        <svg
+          viewBox="0 0 2880 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+    <a type="button" class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="formulaire.html">Formulaire</a>
+    
+    <section class="pt-7 pt-md-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- CARD BOOTSTRAP -->
+            <div class="card card-row shadow-light-lg mb-6 lift lift-lg">
+              <div class="row gx-0">
+                <div class="col-12"></div>
+                <a
+                  class="col-12 col-md-6 order-md-2 bg-cover card-img-end"
+                  style="background-image: url(assets/img/photos/flexbox.jfif)"
+                  href="article-flexbox.html"
+                >
+                  <!-- Image (placeholder) -->
+                  <img
+                    src="assets/img/photos/hero-home.jpg"
+                    alt="..."
+                    class="img-fluid d-md-none invisible"
+                  />
+
+                  <!-- Shape (forme arrondie) -->
+                  <div
+                    class="shape shape-start shape-fluid-y text-white d-none d-md-block"
+                  >
+                    <svg
+                      viewBox="0 0 112 690"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <div class="col-12 col-md-6 order-md-1">
+                  <!-- Body de la card -->
+                  <a class="card-body" href="article-flexbox.html">
+                    <!-- Heading/Titre de la card -->
+                    <h3>Flexbox</h3>
+
+                    <!-- Text de la card -->
+                    <p class="mb-0 text-muted">
+                    Qu'est ce qu'une flexbox ?
+                    </p>
+                  </a>
+
+                  <!-- Meta -->
+                  <a class="card-meta" href="#!">
+                    <!-- Divider -->
+                    <hr class="card-meta-divider" />
+
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm me-2">
+                      <img
+                        src="./assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+                        alt="..."
+                        class="avatar-img rounded-circle"
+                      />
+                    </div>
+
+                    <!-- Auteur -->
+                    <h6 class="text-uppercase text-muted me-2 mb-0">Evan</h6>
+
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                      <time datetime="2019-05-02">18 janvier 2023</time>
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+    
+    
+    
+    
+    
+    
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <!-- Brand -->
+            <img
+              src="./assets/img/avatars/1461289-screenshot-49-article_m-1.webp"
+              alt="..."
+              class="footer-brand img-fluid mb-2"
+            />
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">Pro genshin</p>
+
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img
+                    src="./assets/img/icons/social/instagram.svg"
+                    class="list-social-icon"
+                    alt="..."
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img
+                    src="./assets/img/icons/social/facebook.svg"
+                    class="list-social-icon"
+                    alt="..."
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img
+                    src="./assets/img/icons/social/twitter.svg"
+                    class="list-social-icon"
+                    alt="..."
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img
+                    src="./assets/img/icons/social/pinterest.svg"
+                    class="list-social-icon"
+                    alt="..."
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"></div>
+          <div class="col-6 col-md-4 col-lg-2"></div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0"></div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">Navigation</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset"> Accueil </a>
+              </li>
+              <li class="mb-3">
+                <a href="premier-article.html" class="text-reset">
+                  Cyno
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="deuxième-article.html" class="text-reset">
+                 Xiao
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="troisième-article.html" class="text-reset">
+                  Jean
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="quatrieme-article.html" class="text-reset">
+                  Zhongli
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="gros-article-1.html" class="text-reset">
+                  Mondstadt
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="gros-article-2.html" class="text-reset">
+                  Boss
+                  <li class="mb-3">   
+                </a>
+                <li class="mb-3">
+                  <a href="article-flexbox.html" class="text-reset">
+                    flexbox</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+  </body>
+</html>
